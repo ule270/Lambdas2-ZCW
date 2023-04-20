@@ -12,10 +12,20 @@ public class Person {
     String emailAddress;
 
     public int getAge() {
-        // ...
+        return 0;
     }
 
     public void printPerson() {
-        // ...
+        System.out.println(toString());
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", birthday=" + birthday +
+                ", gender=" + gender +
+                ", emailAddress='" + emailAddress + '\'' +
+                '}';
     }
 }
